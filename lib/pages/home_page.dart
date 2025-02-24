@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:todo_app/models/task.dart';
 import 'package:todo_app/theme/app_color.dart';
@@ -43,7 +44,16 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Center(child: Text('ToDoList')),
+        title: Text('ToDoList'),
+        actions: [
+          IconButton(
+            icon: Icon(
+              CupertinoIcons.calendar,
+              size: 30,
+            ),
+            onPressed: () {},
+          ),
+        ],
       ),
       body: Container(
         margin: const EdgeInsets.all(10),
@@ -55,9 +65,7 @@ class _MyHomePageState extends State<MyHomePage> {
               (index) => ListItem(
                 task: tasks[index],
                 onTaskUpdate: (updatedTask) {
-                  setState(() {
-                    // Cập nhật danh sách task ở widget cha
-                  });
+                  setState(() {});
                 },
               ),
             ),
