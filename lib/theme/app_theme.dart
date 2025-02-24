@@ -50,11 +50,12 @@ class AppTheme {
         fillColor: WidgetStateProperty.all(Color(0x00FFFFFF)),
       ),
       elevatedButtonTheme: ElevatedButtonThemeData(
-      style: ElevatedButton.styleFrom(
-        backgroundColor: AppColors.primary,
-        foregroundColor: AppColors.primary,
+        style: ElevatedButton.styleFrom(
+            backgroundColor: AppColors.primary,
+            foregroundColor: AppColors.primary,
+            shape:
+                RoundedRectangleBorder(borderRadius: BorderRadius.circular(5))),
       ),
-    ),
     );
   }
 }

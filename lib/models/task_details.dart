@@ -20,6 +20,10 @@ class TaskDetails {
     TaskDetails(10, 1, "Task 10", isDone: true),
     TaskDetails(11, 2, "Task 11", isDone: true),
     TaskDetails(12, 2, "Task 12", isDone: false),
+    TaskDetails(13, 1, "Task 1", isDone: false),
+    TaskDetails(14, 1, "Task 1", isDone: false),
+    TaskDetails(15, 1, "Task 1", isDone: false),
+    TaskDetails(16, 1, "Task 1", isDone: false),
   ];
 
   // Constructor với initializer list
